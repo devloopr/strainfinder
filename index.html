@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GET request with CORS fix</title>
+    <link href="css/style.css" rel="stylesheet" />
+    <link rel="icon" href="data:;base64,=" />
+  </head>
+  <body>
+    <form id="form" action="/" method="GET">
+      <input type="text" name="name" placeholder="uSrname" id="name" />
+      <input type="password" name="password" placeholder="password" id="password" />
+      <button type="submit">submit</button>
+    </form>
+    <div id="error"></div>
+    <div class="container">
+      <div class="logo-container">
+        <img src="./img/logo.png" />
+      </div>
+
+      <input class="search" placeholder="Search by name" />
+
+      <div class="product-container">
+        <div class="loader"></div>
+      </div>
+
+      <div class="filter-error"><p>No results</p></div>
+    </div>
+    <script src="/js/ui/login.js" type="module"></script>
+    <script src="/data.js" type="module"></script>
+  </body>
+</html>
