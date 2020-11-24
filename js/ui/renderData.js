@@ -8,8 +8,8 @@ export function renderData(dataToRender) {
                       <div class="img-container">
                         <img src="${products.img}" width="200px"/>
                       </div>
-                         <h4>${products.name}</h4>
-                        <h5>${products.occupation}</h5>
+                         <h4 class="card-text">${products.name}</h4>
+                        <p class="card-text">${products.occupation}</p>
                       </div>
     `;
   });
