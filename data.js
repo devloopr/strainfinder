@@ -2,7 +2,7 @@ import { renderData } from "./js/ui/renderData.js";
 import { filterSearch } from "./js/ui/filterSearch.js";
 import { displayMessage } from "./js/ui/displayMessage.js";
 
-const url = "https://t9jt3myad3.execute-api.eu-west-2.amazonaws.com/api/breakingbad";
+const url = "https://noroffcors.herokuapp.com/https://t9jt3myad3.execute-api.eu-west-2.amazonaws.com/api/breakingbad";
 
 // const urler = "https://t9jt3myad3.execute-api.eu-west-2.amazonaws.com/api/breakingbad";
 // const proxy = "https://noroffcors.herokuapp.com/";
