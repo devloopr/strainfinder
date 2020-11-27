@@ -10,7 +10,7 @@ export function filterSearch(data) {
     const searchValue = event.target.value.trim().toLowerCase();
 
     const filteredData = data.filter(function (product) {
-      if (product.name.toLowerCase().startsWith(searchValue)) {
+      if (product.name.toLowerCase().indexOf(searchValue) > -1) {
         return true;
       }
     });
