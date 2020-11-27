@@ -11,12 +11,27 @@ export function renderData(dataToRender) {
   dataToRender.forEach(function (products) {
     productContainer.innerHTML += `
                    <div class="card">
+                   
                       <div class="img-container">
                       <img src="${products.img}" width="200px"/>
                       </div>
                       <h4 class="card-text">${products.name}</h4>
                       <p class="card-text">${products.occupation}</p>
+                      <i class="fa fa-heart-o" data-id="${products.id}" data-name="${products.name}"></i>
+                      <div>
+                      
                    </div>
     `;
   });
+
+  const favoButton = document.querySelectorAll(".card i");
+
+  favoButton.forEach(function (icon) {
+    icon.addEventListener("click", handleClick);
+  });
+
+  function handleClick() {
+    this.classList.toggle("fa-heart");
+    this.classList.toggle("fa-heart-o");
+  }
 }

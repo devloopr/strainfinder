@@ -89,7 +89,7 @@ h1 {
 
 .product-container {
   display: grid;
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   grid-auto-rows: auto;
