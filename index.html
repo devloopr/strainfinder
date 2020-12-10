@@ -3,33 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GET request with CORS fix</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <title>Strainfinder Amsterdam</title>
     <link href="css/style.css" rel="stylesheet" />
     <link rel="icon" href="data:;base64,=" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto&display=swap" rel="stylesheet" />
   </head>
   <body>
-    <div class="form-container">
-      <form id="form" action="/" method="GET">
-        <input type="text" name="name" placeholder="uSrname" id="name" />
-        <input type="password" name="password" placeholder="password" id="password" />
-        <button type="submit">login</button>
-      </form>
-      <div id="error"></div>
-    </div>
-
     <div class="container">
-      <div class="logo-container">
-        <img src="./img/logo.png" />
+      <div class="menu-container"></div>
+      <h1>Strainfinder AMSTERDAM</h1>
+      <div class="search-container">
+        <input type="textet" class="search" placeholder="Search by name" />
       </div>
-
-      <input type="textet" class="search" placeholder="Search by name" />
-
-      <div class="product-container">
-        <div class="loader"></div>
-      </div>
+      <div class="product-container">Loading products...</div>
     </div>
-    <script src="./js/ui/login.js" type="module"></script>
-    <script src="./data.js" type="module"></script>
+    <script src="js/index.js" type="module"></script>
   </body>
 </html>
